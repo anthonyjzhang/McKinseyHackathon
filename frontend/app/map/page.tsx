@@ -6,11 +6,7 @@ import SearchBar from "../feed/components/SearchBar";
 
 export default function page() {
   return (
-    <Grid
-      container
-      direction={"column"}
-      sx={{ height: "100%", background: "pink" }}
-    >
+    <Grid container direction={"column"} sx={{ height: "100%" }}>
       <Grid container sx={{ height: "100%", position: "relative" }}>
         <Image
           src={mapImage}
