@@ -20,7 +20,7 @@ export default function RootLayout({
         </Grid>
         <Grid container sx={{ position: "fixed", zIndex: "2" }}>
           <Grid item flex={1}></Grid>
-          <Grid item sx={{ height: "785px", width: "362px", mt: 3 }}>
+          <Grid item sx={{ height: "785px", width: "365px", ml: 0.1, mt: 3 }}>
             <Grid container direction={"column"} height={"100%"}>
               <Grid container sx={{ p: 1, pb: 2 }}>
                 <Grid item sx={{ pl: 4, pt: 0.5 }}>
