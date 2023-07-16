@@ -3,7 +3,7 @@ import { Button, Grid, Icon, List, Typography } from "@mui/material";
 import React, { use } from "react";
 import FeedOutlinedIcon from "@mui/icons-material/FeedOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-import AddCircleOutlinedIcon from "@mui/icons-material/AddCircleOutlined";
+import CenterFocusStrongIcon from "@mui/icons-material/CenterFocusStrong";
 import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { useRouter, usePathname } from "next/navigation";
@@ -84,10 +84,10 @@ export default function NavBar() {
           selected={path.includes("map")}
         />
         <NavItem
-          text={"Search"}
-          link={"search"}
-          icon={AddCircleOutlinedIcon}
-          selected={path.includes("search")}
+          text={"Lens"}
+          link={"lens"}
+          icon={CenterFocusStrongIcon}
+          selected={path.includes("lens")}
         />
         <NavItem
           text={"Leaderboard"}

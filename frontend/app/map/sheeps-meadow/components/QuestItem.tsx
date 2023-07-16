@@ -6,10 +6,12 @@ import { useRouter } from "next/navigation";
 import featureImage from "../../../../public/feature.jpeg";
 
 export default function QuestItem({
+  outlined = false,
   icon,
   title,
   location,
 }: {
+  outlined?: boolean;
   icon: React.ElementType;
   title: string;
   location: string;
@@ -74,11 +76,12 @@ export default function QuestItem({
                     borderRadius: "20px",
                     pl: 2,
                     pr: 2,
-                    background: "#79C000",
-                    color: "white",
+                    border: outlined ? "1px solid #79C000" : "none",
+                    background: outlined ? "white" : "#79C000",
+                    color: outlined ? "#79C000" : "white",
                     textTransform: "none",
                     ":hover": {
-                      background: "#79C000",
+                      background: outlined ? "white" : "#79C000",
                     },
                   }}
                 >

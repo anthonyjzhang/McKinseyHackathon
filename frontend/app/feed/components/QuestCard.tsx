@@ -4,16 +4,28 @@ import React from "react";
 import Image from "next/image";
 import iphonebackground from "../../../public/feature.jpeg";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
+import MonetizationOnRoundedIcon from "@mui/icons-material/MonetizationOnRounded";
+import CalendarMonthRoundedIcon from "@mui/icons-material/CalendarMonthRounded";
 import { useRouter } from "next/navigation";
 
-export default function QuestCard() {
+export default function QuestCard({
+  title,
+  description,
+  link,
+  coin,
+}: {
+  title: string;
+  description: string;
+  link: string;
+  coin: string;
+}) {
   const router = useRouter();
 
   return (
     <Grid container pl={3}>
       <Button
         disableRipple
-        // onClick={() => router.push("/feed/featured")}
+        onClick={() => router.push(link)}
         sx={{
           padding: 0,
           textTransform: "none",
@@ -46,15 +58,50 @@ export default function QuestCard() {
                 }}
                 alt="none"
               />
+
               <Grid
                 container
+                direction={"column"}
                 sx={{
                   height: "100%",
                   position: "absolute",
                   zIndex: "5",
+                  borderRadius: "8px",
+                  background: "#28614070",
                   p: 2,
                 }}
-              ></Grid>
+              >
+                <Grid item pr={1}>
+                  <Grid container justifyContent={"end"}>
+                    <MonetizationOnRoundedIcon sx={{ color: "yellow" }} />
+                    <Typography sx={{ color: "white", fontWeight: "bold" }}>
+                      {coin}
+                    </Typography>
+                  </Grid>
+                </Grid>
+                <Grid item flex={1}></Grid>
+                <Grid
+                  container
+                  textAlign={"start"}
+                  alignItems={"center"}
+                  sx={{ p: 1 }}
+                >
+                  <Grid item>
+                    <Typography
+                      sx={{
+                        color: "white",
+                        fontWeight: "bold",
+                        fontSize: "20px",
+                      }}
+                    >
+                      {title}
+                    </Typography>
+                    <Typography sx={{ color: "white" }}>
+                      {description}
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>

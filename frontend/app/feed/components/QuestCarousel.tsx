@@ -12,9 +12,36 @@ function QuestCarousel() {
         pr: 3,
       }}
     >
-      <QuestCard />
-      <QuestCard />
-      <QuestCard />
+      <QuestCard
+        title={"TOUR"}
+        description={"Seneva Village Tour, and invite a friend"}
+        link={"/feed/action/garden-tour"}
+        coin={"125"}
+      />
+      <QuestCard
+        title={"DAILY QUEST"}
+        description={"15min walk through the park"}
+        link={"/feed"}
+        coin={"200"}
+      />
+      <QuestCard
+        title={"WEEKLY QUEST"}
+        description={"Take a picture at Sheep's Meadow"}
+        link={"/feed"}
+        coin={"20"}
+      />
+      <QuestCard
+        title={"MEMBERSHIP"}
+        description={"Gift a tree to a loved one, show them you care"}
+        link={"/feed"}
+        coin={"300"}
+      />
+      <QuestCard
+        title={"MEMBERSHIP"}
+        description={"If you're late don't keep 'em standing gift a bench"}
+        link={"/feed"}
+        coin={"200"}
+      />
     </List>
   );
 }
