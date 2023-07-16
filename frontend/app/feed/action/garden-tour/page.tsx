@@ -74,8 +74,9 @@ export default function page() {
               justifyContent={"start"}
               alignItems={"center"}
             >
-              <MonetizationOnRoundedIcon sx={{ color: "green", pr: 1 }} />
-              <Typography sx={{ color: "black" }}>200</Typography>
+              <Typography sx={{ color: "black" }}>+</Typography>
+              <MonetizationOnRoundedIcon sx={{ color: "green", pr: 0.5 }} />
+              <Typography sx={{ color: "black" }}>200 cpc</Typography>
             </Grid>
           </Grid>
           <IconButton

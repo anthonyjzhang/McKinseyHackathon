@@ -100,7 +100,9 @@ export default function page() {
             width: "50px",
             borderRadius: "100px",
           }}
-        ></Grid>
+        >
+          <Typography fontSize={"14px"}>TJ</Typography>
+        </Grid>
         <Grid
           container
           alignContent={"center"}
@@ -111,7 +113,9 @@ export default function page() {
             width: "50px",
             borderRadius: "100px",
           }}
-        ></Grid>
+        >
+          <Typography fontSize={"14px"}>BD</Typography>
+        </Grid>
         <Grid
           container
           alignContent={"center"}
@@ -122,7 +126,9 @@ export default function page() {
             width: "50px",
             borderRadius: "100px",
           }}
-        ></Grid>
+        >
+          <Typography fontSize={"14px"}>AM</Typography>
+        </Grid>
       </Grid>
 
       <Grid container sx={{ width: "100%" }} p={1}>

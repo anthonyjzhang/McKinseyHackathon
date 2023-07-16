@@ -73,9 +73,13 @@ export default function QuestCard({
               >
                 <Grid item pr={1}>
                   <Grid container justifyContent={"end"}>
-                    <MonetizationOnRoundedIcon sx={{ color: "yellow" }} />
                     <Typography sx={{ color: "white", fontWeight: "bold" }}>
-                      {coin}
+                      +
+                    </Typography>
+                    <MonetizationOnRoundedIcon sx={{ color: "yellow" }} />
+
+                    <Typography sx={{ color: "white", fontWeight: "bold" }}>
+                      {coin} cpc
                     </Typography>
                   </Grid>
                 </Grid>
