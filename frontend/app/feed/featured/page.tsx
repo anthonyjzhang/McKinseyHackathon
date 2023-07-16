@@ -35,7 +35,7 @@ export default function page() {
           <IconButton
             disableRipple
             onClick={() => {
-              router.push("/feed");
+              router.back();
             }}
             sx={{
               background: "#286140",
@@ -67,11 +67,11 @@ export default function page() {
             sx={{
               // borderRadius: "20px",
               p: 1,
-              background: "#286140",
-              color: "white",
+              background: "white",
+              color: "#286140",
               textTransform: "none",
               ":hover": {
-                background: "#286140",
+                background: "white",
               },
             }}
           >
@@ -84,11 +84,11 @@ export default function page() {
               // borderRadius: "20px",
               ml: 2,
               p: 1,
-              background: "#286140",
-              color: "white",
+              background: "white",
+              color: "#286140",
               textTransform: "none",
               ":hover": {
-                background: "#286140",
+                background: "white",
               },
             }}
           >
@@ -102,11 +102,11 @@ export default function page() {
               borderRadius: "20px",
               pl: 2,
               pr: 2,
-              background: "#286140",
+              background: "#79C000",
               color: "white",
               textTransform: "none",
               ":hover": {
-                background: "#286140",
+                background: "#79C000",
               },
             }}
           >
@@ -277,11 +277,11 @@ export default function page() {
                     pr: 2,
                     mt: 2,
                     mb: 1,
-                    background: "#286140",
+                    background: "#79C000",
                     color: "white",
                     textTransform: "none",
                     ":hover": {
-                      background: "#286140",
+                      background: "#79C000",
                     },
                   }}
                 >

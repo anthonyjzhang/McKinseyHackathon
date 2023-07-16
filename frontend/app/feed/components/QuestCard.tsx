@@ -47,24 +47,14 @@ export default function QuestCard() {
                 alt="none"
               />
               <Grid
-                item
+                container
                 sx={{
                   height: "100%",
                   position: "absolute",
                   zIndex: "5",
                   p: 2,
                 }}
-              >
-                <Grid
-                  sx={{
-                    background: "#286140",
-                    color: "white",
-                    ":hover": { background: "#286140" },
-                  }}
-                >
-                  <ArrowBackOutlinedIcon />
-                </Grid>
-              </Grid>
+              ></Grid>
             </Grid>
           </Grid>
         </Grid>

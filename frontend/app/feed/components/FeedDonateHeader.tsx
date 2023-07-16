@@ -33,11 +33,11 @@ export default function FeedDonateHeader() {
               borderRadius: "20px",
               pl: 2,
               pr: 2,
-              background: "#286140",
+              background: "#79C000",
               color: "white",
               textTransform: "none",
               ":hover": {
-                background: "#286140",
+                background: "#79C000",
               },
             }}
           >
