@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import IphoneDisplay from "./components/IphoneDisplay";
 import "./globals.css";
+import NavBar from "./components/NavBar";
 
 export default function RootLayout({
   children,
@@ -31,24 +32,7 @@ export default function RootLayout({
               <Grid item sx={{ height: "658px" }} direction={"column"}>
                 {children}
               </Grid>
-              <Grid
-                container
-                sx={{
-                  position: "fixed",
-                  width: "362px",
-                  height: "110px",
-                  background: "white",
-                  bottom: 20,
-                  zIndex: "3",
-                  borderBottomLeftRadius: "50px",
-                  borderBottomRightRadius: "50px",
-                  borderTop: "1px solid #F1F1F1",
-                  p: 1,
-                  pb: 2,
-                }}
-              >
-                Aokmdfkms OOPs
-              </Grid>
+              <NavBar />
             </Grid>
           </Grid>
           <Grid item flex={1}></Grid>

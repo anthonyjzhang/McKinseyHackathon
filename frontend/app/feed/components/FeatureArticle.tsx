@@ -11,7 +11,7 @@ export default function FeatureArticle() {
     <Grid container justifyContent={"center"}>
       <Button
         disableRipple
-        onClick={() => router.push("/featured")}
+        onClick={() => router.push("/feed/featured")}
         sx={{
           padding: 0,
           textTransform: "none",

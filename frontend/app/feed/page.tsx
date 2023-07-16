@@ -50,10 +50,7 @@ export default function Home() {
         <Grid container pb={2}>
           <FeatureArticle />
         </Grid>
-        <Typography
-          sx={{ fontSize: "12px !important", p: 3, pb: 10 }}
-          fontWeight={"bold"}
-        >
+        <Typography sx={{ fontSize: "14px !important", p: 3, pt: 0, pb: 10 }}>
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
           it over 2000 years old. Richard McClintock, a Latin professor at
