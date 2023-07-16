@@ -40,7 +40,7 @@ export default function Home() {
         </Grid>
       </Grid>
 
-      <Grid container overflow={"scroll"} sx={{ height: "475px" }}>
+      <Grid container overflow={"scroll"} sx={{ height: "441px" }}>
         <Typography
           sx={{ fontSize: "12px !important", pl: 3, pb: 2 }}
           fontWeight={"bold"}

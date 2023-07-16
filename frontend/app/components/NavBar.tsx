@@ -57,7 +57,7 @@ export default function NavBar() {
     <Grid
       container
       sx={{
-        position: "fixed",
+        // position: "fixed",
         width: "362px",
         height: "110px",
         background: "white",

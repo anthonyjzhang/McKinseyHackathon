@@ -29,10 +29,12 @@ export default function RootLayout({
                 <Grid item flex={1}></Grid>
                 <Grid item></Grid>
               </Grid>
-              <Grid item sx={{ height: "658px" }} direction={"column"}>
+              <Grid item flex={1} direction={"column"}>
                 {children}
               </Grid>
-              <NavBar />
+              <Grid item>
+                <NavBar />
+              </Grid>
             </Grid>
           </Grid>
           <Grid item flex={1}></Grid>

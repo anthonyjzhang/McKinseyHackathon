@@ -8,7 +8,7 @@ export default function IphoneDisplay() {
     <Grid item>
       <Image
         src={iphonebackground}
-        style={{ height: "100vh" }}
+        style={{ height: "835px" }}
         alt="iphone_here"
       />
     </Grid>
