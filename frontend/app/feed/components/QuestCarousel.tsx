@@ -14,7 +14,7 @@ function QuestCarousel() {
     >
       <QuestCard
         title={"TOUR"}
-        description={"Seneva Village Tour, and invite a friend"}
+        description={"Seneca Village Tour, and invite a friend"}
         link={"/feed/action/garden-tour"}
         coin={"125"}
       />
@@ -22,7 +22,7 @@ function QuestCarousel() {
         title={"DAILY QUEST"}
         description={"15min walk through the park"}
         link={"/feed"}
-        coin={"200"}
+        coin={"10"}
       />
       <QuestCard
         title={"WEEKLY QUEST"}
