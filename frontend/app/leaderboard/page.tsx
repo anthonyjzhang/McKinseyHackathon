@@ -118,6 +118,11 @@ export default function page() {
               }}
             >
               <Typography fontSize={"30px"}>MA</Typography>
+              <Grid item xs={12}>
+                <Typography textAlign={"center"} fontSize={"10px"}>
+                  5025
+                </Typography>
+              </Grid>
             </Grid>
           </Grid>
           <Typography
@@ -135,12 +140,17 @@ export default function page() {
               justifyContent={"center"}
               sx={{
                 background: "#e9e9e9",
-                height: "50px",
-                width: "50px",
+                height: "60px",
+                width: "60px",
                 borderRadius: "100px",
               }}
             >
               <Typography fontSize={"14px"}>BC</Typography>
+              <Grid item xs={12}>
+                <Typography textAlign={"center"} fontSize={"10px"}>
+                  5000
+                </Typography>
+              </Grid>
             </Grid>
             <Grid
               container
@@ -148,12 +158,17 @@ export default function page() {
               justifyContent={"center"}
               sx={{
                 background: "#e9e9e9",
-                height: "50px",
-                width: "50px",
+                height: "60px",
+                width: "60px",
                 borderRadius: "100px",
               }}
             >
               <Typography fontSize={"14px"}>AM</Typography>
+              <Grid item xs={12}>
+                <Typography textAlign={"center"} fontSize={"10px"}>
+                  4996
+                </Typography>
+              </Grid>
             </Grid>
           </Grid>
           {[4, 5, 6, 7, 8, 9].map((num, index) => (

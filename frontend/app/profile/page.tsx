@@ -185,16 +185,19 @@ export default function page() {
         <CustomTabPanel value={value} index={1}>
           <Typography fontSize={"14px"}>
             <QuestItem
+              played={true}
               icon={SearchIcon}
               title={"Find the hidden easter eggs"}
               location={"Tennis court, Northwest"}
             />
             <QuestItem
+              played={true}
               icon={AirlineStopsIcon}
               title={"Take a guided tour"}
               location={"Sheeps Meadow, Southeast"}
             />
             <QuestItem
+              played={true}
               icon={AirlineStopsIcon}
               title={"Take a guided tour"}
               location={"Sheeps Meadow, Southeast"}

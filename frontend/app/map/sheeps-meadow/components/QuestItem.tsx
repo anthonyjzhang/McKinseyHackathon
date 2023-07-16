@@ -4,14 +4,17 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import featureImage from "../../../../public/feature.jpeg";
+import MonetizationOnRoundedIcon from "@mui/icons-material/MonetizationOnRounded";
 
 export default function QuestItem({
   outlined = false,
   icon,
   title,
   location,
+  played = false,
 }: {
   outlined?: boolean;
+  played?: boolean;
   icon: React.ElementType;
   title: string;
   location: string;
@@ -67,27 +70,52 @@ export default function QuestItem({
                   {location}
                 </Typography>
               </Grid>
-              <Grid item flex={1}>
-                <Button
-                  disableRipple
-                  size="small"
-                  sx={{
-                    ml: 2,
-                    borderRadius: "20px",
-                    pl: 2,
-                    pr: 2,
-                    border: outlined ? "1px solid #79C000" : "none",
-                    background: outlined ? "white" : "#79C000",
-                    color: outlined ? "#79C000" : "white",
-                    textTransform: "none",
-                    ":hover": {
+              {played ? (
+                <Grid item pl={2}>
+                  <Grid container justifyContent={"end"} alignItems={"center"}>
+                    <Typography
+                      sx={{
+                        fontSize: "14px",
+                        color: "black",
+                      }}
+                    >
+                      +
+                    </Typography>
+                    <MonetizationOnRoundedIcon sx={{ color: "#fcba03" }} />
+
+                    <Typography
+                      sx={{
+                        fontSize: "14px",
+                        color: "black",
+                      }}
+                    >
+                      200 cpc
+                    </Typography>
+                  </Grid>
+                </Grid>
+              ) : (
+                <Grid item flex={1}>
+                  <Button
+                    disableRipple
+                    size="small"
+                    sx={{
+                      ml: 2,
+                      borderRadius: "20px",
+                      pl: 2,
+                      pr: 2,
+                      border: outlined ? "1px solid #79C000" : "none",
                       background: outlined ? "white" : "#79C000",
-                    },
-                  }}
-                >
-                  play
-                </Button>
-              </Grid>
+                      color: outlined ? "#79C000" : "white",
+                      textTransform: "none",
+                      ":hover": {
+                        background: outlined ? "white" : "#79C000",
+                      },
+                    }}
+                  >
+                    play
+                  </Button>
+                </Grid>
+              )}
             </Grid>
           </Grid>
         </Grid>

@@ -76,7 +76,7 @@ export default function QuestCard({
                     <Typography sx={{ color: "white", fontWeight: "bold" }}>
                       +
                     </Typography>
-                    <MonetizationOnRoundedIcon sx={{ color: "yellow" }} />
+                    <MonetizationOnRoundedIcon sx={{ color: "#fcba03" }} />
 
                     <Typography sx={{ color: "white", fontWeight: "bold" }}>
                       {coin} cpc
