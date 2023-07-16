@@ -16,7 +16,7 @@ export default function page() {
         <Image
           src={iphonebackground}
           style={{
-            width: "100%",
+            width: "366px",
             height: "200px",
             position: "relative",
             objectFit: "cover",
