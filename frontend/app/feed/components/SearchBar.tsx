@@ -2,7 +2,13 @@ import { Grid, InputAdornment, OutlinedInput } from "@mui/material";
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 
-export default function SearchBar() {
+export default function SearchBar({
+  background = "#E9E9E9",
+  color = "#191919",
+}: {
+  background?: string;
+  color?: string;
+}) {
   return (
     <Grid item>
       <OutlinedInput
@@ -10,8 +16,8 @@ export default function SearchBar() {
         sx={{
           width: "325px",
           borderRadius: "10px",
-          borderColor: "#E9E9E9",
-          background: "#E9E9E9",
+          background: `${background}`,
+          color: `${color}`,
           "& .MuiOutlinedInput-notchedOutline": {
             border: "none",
           },

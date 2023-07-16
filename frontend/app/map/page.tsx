@@ -3,6 +3,9 @@ import React from "react";
 import Image from "next/image";
 import mapImage from "../../public/map.png";
 import SearchBar from "../feed/components/SearchBar";
+import QuestCarousel from "../feed/components/QuestCarousel";
+import FilterCarousel from "./components/FilterCarousel";
+import PlaceCarousel from "./components/PlaceCarousel";
 
 export default function page() {
   return (
@@ -19,60 +22,26 @@ export default function page() {
           alt="iphone_here"
         />
         <Grid
-          item
+          container
+          direction={"column"}
+          alignItems={"start"}
           sx={{
             height: "100%",
             position: "absolute",
             zIndex: "5",
-            p: 2,
+            pt: 2,
           }}
         >
-          {/* <SearchBar /> */}
-
-          <Button
-            disableRipple
-            // onClick={() => {
-            //   // router.back();
-            // }}
-            sx={{
-              background: "#286140",
-              color: "white",
-              textTransform: "none",
-              ":hover": { background: "#286140" },
-            }}
-          >
-            All
-          </Button>
-          <Button
-            disableRipple
-            // onClick={() => {
-            //   // router.back();
-            // }}
-            sx={{
-              ml: 2,
-              textTransform: "none",
-              background: "white",
-              color: "#286140",
-              ":hover": { background: "white" },
-            }}
-          >
-            Restrooms
-          </Button>
-          <Button
-            disableRipple
-            // onClick={() => {
-            //   // router.back();
-            // }}
-            sx={{
-              ml: 2,
-              textTransform: "none",
-              background: "white",
-              color: "#286140",
-              ":hover": { background: "white" },
-            }}
-          >
-            Playgrounds
-          </Button>
+          <Grid container pb={2} justifyContent={"center"}>
+            <SearchBar color="black" background="white" />
+          </Grid>
+          <Grid container sx={{ width: "366px", overflow: "scroll", pl: 1 }}>
+            <FilterCarousel />
+          </Grid>
+          <Grid item flex={1}></Grid>
+          <Grid container sx={{ width: "366px", overflow: "scroll", pb: 2 }}>
+            <PlaceCarousel />
+          </Grid>
         </Grid>
       </Grid>
     </Grid>

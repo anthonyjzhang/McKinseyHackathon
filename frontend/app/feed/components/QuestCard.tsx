@@ -41,7 +41,7 @@ export default function QuestCard({
             sx={{
               width: "250px",
               border: "1px solid #E9E9E9",
-              borderRadius: "8px",
+              borderRadius: "18px",
             }}
             justifyContent={"space-between"}
             alignItems={"center"}
@@ -54,7 +54,7 @@ export default function QuestCard({
                   height: "200px",
                   position: "relative",
                   objectFit: "cover",
-                  borderRadius: "8px",
+                  borderRadius: "18px",
                 }}
                 alt="none"
               />
@@ -66,7 +66,7 @@ export default function QuestCard({
                   height: "100%",
                   position: "absolute",
                   zIndex: "5",
-                  borderRadius: "8px",
+                  borderRadius: "18px",
                   background: "#28614070",
                   p: 2,
                 }}

@@ -27,7 +27,7 @@ export default function FeatureArticle() {
             sx={{
               width: "325px",
               border: "1px solid #E9E9E9",
-              borderRadius: "8px",
+              borderRadius: "18px",
             }}
             justifyContent={"space-between"}
             alignItems={"center"}
@@ -39,8 +39,8 @@ export default function FeatureArticle() {
                 height: "125px",
                 position: "relative",
                 objectFit: "cover",
-                borderTopLeftRadius: "8px",
-                borderTopRightRadius: "8px",
+                borderTopLeftRadius: "18px",
+                borderTopRightRadius: "18px",
               }}
               alt="none"
             />

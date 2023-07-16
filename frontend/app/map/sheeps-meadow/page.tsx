@@ -78,7 +78,7 @@ export default function page() {
           <IconButton
             disableRipple
             onClick={() => {
-              router.push("/feed");
+              router.back();
             }}
             sx={{
               background: "#286140",
