@@ -2,7 +2,7 @@
 
 ## Background
 
-In the inagural North America McKinsey Digital Hackathon, my team and I solved a business situation faced by a real-world NGO, Central Park Conservancy (CPC). CPC is responsible for the daily maintenance and care of Central Park, but most people think the Park is cared for by the city. CPC tasked us with creating a digital experience to address their objectives: increasing revenue, driving awareness, and improving visitor engagement.
+In the inagural North America McKinsey Digital Hackathon, my team and I solved a business situation faced by a real-world NGO, Central Park Conservancy (CPC). CPC is responsible for the daily maintenance and care of Central Park, but most people think the Park is cared for by the city. CPC tasked us with creating a digital experience to address their objectives: increasing revenue, driving awareness, and improving engagement.
 
 <div align="center">
   <img src="images/objectives.png" width="666" height="383">
