@@ -10,13 +10,11 @@ In the inagural North America McKinsey Digital Hackathon, my team and I solved a
 
 ## Analysis and Planning
 
-Before creating a solution, we thoroughly investigated the conditions of CPC. This included a revenue analysis:
+Before creating a solution, we thoroughly investigated the conditions of CPC. This included a revenue analysis, and based on this data, our focus was on driving revenue through an increase in the volume of donations from everyday visitors and an increase in ticket sales of CPC hosted events.
 
 <div align="center">
   <img src="images/revenueanalysis.png" width="666" height="383">
 </div>
-
-Based on this data, our focus was on driving revenue through an increase in the volume of donations from everyday visitors.
 
 ## Deliverable
 
