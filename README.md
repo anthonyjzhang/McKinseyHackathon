@@ -1,4 +1,4 @@
-# McKinsey Hackathon | mckinsey-hackathon.vercel.app/feed
+# McKinsey Digital Hackathon 2023
 
 ## Background
 
